@@ -44,4 +44,9 @@ jobs:
       run: python3 ${{ github.workspace }}/test_rev30.py
     
 
+    - name: Upload dev build
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        name: dev_build
+        path: ${{github.workspace}}/*.csv
 
