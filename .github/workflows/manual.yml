@@ -30,7 +30,7 @@ jobs:
       run: echo "Hello ${{ github.event.inputs.name }}"
     
     - name: Send greeting
-      run: python3 ./test_rev30.py
+      run: python3 ${{ github.workspace }}/test_rev30.py
     
 
 
