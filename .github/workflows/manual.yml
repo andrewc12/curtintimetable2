@@ -28,6 +28,10 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
+      
+    - uses: actions/checkout@v3
+    #  with:
+        #repository: openzfsonwindows/openzfs
     
     - name: Send greeting
       run: python3 ${{ github.workspace }}/test_rev30.py
